@@ -1,0 +1,284 @@
+/* general style */
+html {
+    box-sizing: border-box;
+    background: 
+		hsl(204, 43%, 93%);
+    
+    height: 100%;
+    
+    
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    /* background: none; */
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;    
+    
+}
+
+/* all steps style */
+#form-id{
+    background-color: hsl(204, 43%, 93%);
+    overflow: hidden;
+}
+.steps{
+    margin: 0;
+    position: absolute;
+    /* border: #212529 solid 1px; */
+    background-color: white;
+    display: none;  
+    margin: 5vh 3vw 5vh 3vw;
+}
+.active{
+    position: relative;
+    display: flex;
+}
+/* pregress steps style  */
+#steps-progress{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+    margin-bottom: 30px;
+    
+}
+#steps-progress > p{
+    color: black;
+    margin-right: 20px;
+
+}
+#steps-progress > p > span{
+    border: #747575 solid 1px ;
+    background-color: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 500px;
+}
+.actprog{
+    background-color: lightgreen;
+    color: white;
+}
+
+/* syling steps  */
+.steps{
+    flex-direction: column;
+    color:rgb(80, 80, 80);
+    padding: 5% ;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:0px 0px 30px rgb(189, 188, 188);
+}
+.step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding-top: 10px;
+    padding-left: 15px;
+    color: gray;
+}
+.steps > h3 {
+    color:#02CBE6;
+    font-weight: bold;
+}
+.inf-input{
+    margin-top: 10px;
+    color: black;
+    margin-bottom: 10px;
+}
+.steps div{
+    display: flex;
+    flex-direction: column;
+}
+.steps div input{
+    border: none;
+    border-bottom: gray 1px solid;
+    margin-bottom: 30px;
+}
+.steps div input:focus{
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+}
+/* button style  */
+.steps .buttons{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+}
+.steps .button1{
+    justify-content: end;
+    
+}
+/* gender input style */
+#div-gender{
+    flex-direction: row;
+    align-self: baseline;
+
+}
+
+#div-gender  label{
+    position: relative;
+    bottom: 5px;
+    margin-left:10px ;
+    margin-right: 10px;
+}
+
+#div-gender  input:hover{
+    
+    cursor: pointer;
+}
+/* all buttons style  */
+.steps .buttons div button {
+    
+    background-color: lightgreen;
+    padding: 5px;
+    width: 30vw;
+    border: none;
+    border-radius: 10px;
+}
+.steps .buttons div button:hover{
+    color: white;
+    background-color: rgb(116, 228, 116);
+}
+/* agree with terms style  */
+#checkbox-dev{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+#checkbox-dev > input{
+    position: relative;
+    /* bottom:5px; */
+    margin-right: 5px;
+}
+#checkbox-dev > input:hover{
+cursor: pointer;
+}
+/* edit of onlin courses style  */
+.first-letter{
+    color: rgb(248, 172, 31);
+}
+/* edit image and email of user in step 2 */
+#user-icon-email{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    
+}
+#user-icon-email > .number-one > label > img{
+    width: 20vw;
+    /* border: 1px gray solid; */
+    border-radius: 200px;
+    overflow: hidden;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#file{
+    display: none;
+}
+#user-icon-email > .number-two{
+    position: relative;
+    top: 5px;
+}
+/* aboutme margin bottom */
+#aboutme{
+    margin-bottom: 30px;
+}
+ /* welcome step syle  */
+#welcome-step{
+   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#welcome-step > img{
+    width: 40vw;
+    margin-bottom: 50px;
+}
+/* ------------------------- */
+/* footer  */
+footer {
+    
+    bottom: 0;
+    background-color: #191C1B;
+    
+    width: 100vw;
+
+}
+
+footer > p {
+    margin: 0;
+    color: white;
+}
+
+footer > p > a {
+    margin: 0;
+    color: #02CBE6;
+    text-decoration: none;
+}
+@media (min-width:576px){
+    .steps{
+        
+        margin: 10vh 8vw 10vh 8vw;
+    }
+    .steps .buttons div button {
+        width: 25vw;
+    }
+}
+
+@media (min-width:768px){
+    .steps{
+        
+        margin: 15vh 13vw 15vh 13vw;
+    }
+    .steps .buttons div button {
+        width: 20vw;
+    }
+}
+@media (min-width:992px){
+    .steps{
+        
+        margin: 15vh 18vw 15vh 18vw;
+    }
+    .steps .buttons div button {
+        width: 15vw;
+    }
+}
+@media (min-width:1200px){
+    .steps{
+        
+        margin: 15vh 23vw 15vh 23vw;
+    }
+    .steps .buttons div button {
+        width: 10vw;
+    }
+}
+@media (min-width:1400px){
+    .steps{
+        
+        margin: 15vh 28vw 15vh 28vw;
+    }
+    .steps .buttons div button {
+        width: 5vw;
+    }
+}

@@ -1,0 +1,198 @@
+/* general style */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #E4EEF5;
+    margin: 0;
+}
+
+ul,
+li,
+img {
+    margin: 0;
+}
+
+/* header style  */
+header {
+    margin: 0;
+
+    position: absolute;
+
+
+}
+
+nav {
+    background-color: #3D3D3D;
+    position: fixed;
+    width: 100vw;
+    height: auto;
+    opacity: 0.9;
+}
+
+nav>ul {
+    margin-left: 0;
+    padding: 1px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/* navigation button sing up  */
+#top-singup {
+    margin-right: 10px;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.726);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#top-singup:hover {
+    color: white;
+    scale: 1.2;
+    transition: 200ms;
+}
+
+/* logo with home text  */
+.nav-logo>a {
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.726);
+    text-decoration: none;
+}
+
+.nav-logo>a:hover {
+
+    color: white;
+    transition: 200ms;
+}
+
+#home-position {
+    position: relative;
+    top: -10px;
+}
+
+#top-logo {
+    width: 35px;
+    margin: 5px 3px 0 5px;
+}
+
+/* main style  */
+/* top section  */
+#top-section {
+
+    width: 100vw;
+    height: 60vh;
+}
+
+#home-page-background {
+
+    background-image: url(./media/home-background-image.jpeg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#content-above-of-image {
+    display: flex;
+    color: #3D3D3D;
+    margin-top: 20vh;
+    margin-left: 5vw;
+    align-items: center;
+    font-weight: 600;
+}
+
+#log-on-backgound-image {
+
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+}
+
+.first-letter-logo {
+    color: orange;
+    font-weight: 700;
+}
+
+#paragraph-above-image {
+    color: #3D3D3D;
+    margin-left: 15vw;
+    margin-top: 5vh;
+}
+
+/* buttom section  */
+#our-programme-section {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+#our-programme-section>h3 {
+    color: #02CBE6;
+}
+
+#our-programme-section>ul {
+    line-height: 30px;
+}
+
+#button-singup {
+    margin-top: 30px;
+    background-color: hsl(154, 59%, 51%);
+    color: #C6FAF3;
+    border: white;
+    border-radius: 10px;
+    height: 35px;
+    width: 70vw;
+}
+
+#button-singup:hover {
+    scale: 1.1;
+    transition: 200ms;
+    color: white;
+
+}
+
+/* footer  */
+footer {
+    background-color: #191C1B;
+    margin-top: 30px;
+    width: 100vw;
+
+}
+
+footer>p {
+    margin: 0;
+    color: white;
+}
+
+footer>p>a {
+    color: #02CBE6;
+    text-decoration: none;
+}
+
+@media (min-width:576px) {
+    #our-programme-section>ul {
+        line-height: 30px;
+        margin: auto 15vw auto 15vw;
+    }
+
+    #button-singup {
+        width: 40vw;
+    }
+}
